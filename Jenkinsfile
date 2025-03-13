@@ -23,7 +23,7 @@ pipeline {
         
         stage('Build application') {
             steps {
-                sh 'g++ -o ${SRN}-1 main/hello.cpp || echo "Build failed - g++ not available"'
+                sh 'g+ -o ${SRN}-1 main/hello.cpp'
                 sh 'echo "Build step completed"'
             }
         }
